@@ -1,4 +1,4 @@
-package com.lms.libraryManagementSystem
+package com.lms.libraryManagementSystem.Entity
 
 import jakarta.persistence.*
 

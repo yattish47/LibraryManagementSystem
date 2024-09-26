@@ -1,4 +1,4 @@
-package com.lms.libraryManagementSystem
+package com.lms.libraryManagementSystem.Entity
 
 import jakarta.persistence.*
 
@@ -7,12 +7,15 @@ import jakarta.persistence.*
 class UserEntity (
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(nullable = false, name = "id")
-    var id: Int = 0,
+    var id: Int,
 
     @Column(nullable = false, name = "name")
-    var name: String = ""
+    var name: String = "",
+
+    @Column(nullable = false, name = "age")
+    var age: Int = 0
 ) {
-    constructor(): this(0, "");
+    constructor(): this(0, "", 0);
 
 
 }
